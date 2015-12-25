@@ -14,10 +14,10 @@ var aqicn = new Aqicn(key);
 aqicn.get({
     sw: {
         lat: 20,
-        lng:100
+        lng:90
     },
     ne: {
-        lat: 44,
+        lat: 60,
         lng:135
     }
 }).then(function(resp) {

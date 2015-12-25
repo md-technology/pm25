@@ -23,7 +23,7 @@ function Aqicn(token) {
         var ne = "("+bounds.ne.lat+","+bounds.ne.lng+")";
         var pBounds = "("+sw+","+ne+")";
         options.qs.bounds = pBounds;
-        proxiedRequest.get(options, function (err, response, body) {
+        request.get(options, function (err, response, body) {
             if (err) {
                 deferred.reject(err);
                 return;
